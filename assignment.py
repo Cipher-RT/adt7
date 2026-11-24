@@ -9,6 +9,12 @@ FirstEmpty = 0
 # Exercise 1
 def Initialise():
     # Write your code here
+    global LinkedList,FirstEmpty,FirstNode
+    for x in range(10):
+        LinkedList.append([-1, x + 1])
+    LinkedList[9][1] = -1
+    FirstEmpty=0
+    FirstNode=-1
     pass
 
 
