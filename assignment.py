@@ -16,10 +16,32 @@ def Initialise():
     FirstEmpty=0
     FirstNode=-1
     pass
+def IsEmpty():
+    # Write your code here
+    if FirstNode == -1:
+        return True
+    return False
+    pass
+
+def IsFull():
+    # Write your code here
+    if FirstEmpty == -1:
+        return True
+    return False
+    pass
 
 
 def OutputNodes():
     # Write your code here
+    global LinkedList, FirstNode
+    cur_pointer = FirstNode
+    try:
+        while cur_pointer != -1:
+            print((LinkedList[cur_pointer][0]))
+            cur_pointer = LinkedList[cur_pointer][1]
+    except
+        return "Linked list is empty"
+
     pass
 
 
